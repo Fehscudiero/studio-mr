@@ -38,15 +38,15 @@ const Header = () => {
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24">
-          {/* Logo - Maior e mais destacado */}
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
           <div className="flex items-center space-x-4">
             <img 
               src="/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png" 
               alt="Studio MR" 
-              className="w-20 h-20 object-contain filter drop-shadow-lg"
+              className="w-16 h-16 object-contain"
             />
-            <span className="text-4xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent drop-shadow-lg font-serif">
+            <span className="text-3xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               Studio MR
             </span>
           </div>
