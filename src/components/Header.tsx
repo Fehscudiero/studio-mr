@@ -40,13 +40,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-4">
             <img 
-              src="/lovable-uploads/7bea0c57-deef-419a-a5a9-2b3db27ce864.png" 
+              src="/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png" 
               alt="Studio MR" 
-              className="w-12 h-12 object-contain"
+              className="w-16 h-16 object-contain"
             />
-            <span className="text-2xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+            <span className="text-3xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               Studio MR
             </span>
           </div>
@@ -58,12 +58,16 @@ const Header = () => {
             <button onClick={() => scrollToSection('services')} className="nav-link">Serviços</button>
             <button onClick={() => scrollToSection('gallery')} className="nav-link">Galeria</button>
             <button onClick={() => scrollToSection('testimonials')} className="nav-link">Depoimentos</button>
-            <button 
-              onClick={handleScheduleClick}
-              className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-6 py-2 rounded-full font-semibold hover:from-yellow-500 hover:to-yellow-700 transform hover:scale-105 transition-all duration-300"
-            >
-              Agende
-            </button>
+            <div className="relative">
+              <button 
+                onClick={handleScheduleClick}
+                className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-6 py-2 rounded-full font-semibold hover:from-yellow-500 hover:to-yellow-700 transform hover:scale-105 transition-all duration-300"
+              >
+                Agende
+              </button>
+              {/* Pulse Animation Ring */}
+              <div className="absolute inset-0 rounded-full bg-yellow-400 animate-ping opacity-20" />
+            </div>
             <button onClick={() => scrollToSection('contact')} className="nav-link">Contato</button>
             
             {/* Theme Toggle */}
@@ -106,12 +110,16 @@ const Header = () => {
             <button onClick={() => scrollToSection('services')} className="mobile-nav-link">Serviços</button>
             <button onClick={() => scrollToSection('gallery')} className="mobile-nav-link">Galeria</button>
             <button onClick={() => scrollToSection('testimonials')} className="mobile-nav-link">Depoimentos</button>
-            <button 
-              onClick={handleScheduleClick}
-              className="w-full bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-6 py-3 rounded-full font-semibold mx-4 max-w-[calc(100%-2rem)]"
-            >
-              Agende
-            </button>
+            <div className="relative mx-4">
+              <button 
+                onClick={handleScheduleClick}
+                className="w-full bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-6 py-3 rounded-full font-semibold max-w-[calc(100%-2rem)]"
+              >
+                Agende
+              </button>
+              {/* Pulse Animation Ring for Mobile */}
+              <div className="absolute inset-0 rounded-full bg-yellow-400 animate-ping opacity-20" />
+            </div>
             <button onClick={() => scrollToSection('contact')} className="mobile-nav-link">Contato</button>
           </nav>
         </div>

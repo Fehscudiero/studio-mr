@@ -30,18 +30,8 @@ const ChatWidget = () => {
           aria-label="Abrir chat"
         >
           <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/7bea0c57-deef-419a-a5a9-2b3db27ce864.png" 
-              alt="Studio MR Assistant" 
-              className="w-8 h-8 object-contain"
-            />
-            {!isOpen && (
-              <span className="hidden md:block font-semibold whitespace-nowrap pr-2">
-                Agende Agora
-              </span>
-            )}
             <svg 
-              className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`} 
+              className={`w-8 h-8 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`} 
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24"
@@ -52,13 +42,13 @@ const ChatWidget = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               )}
             </svg>
+            {!isOpen && (
+              <span className="hidden md:block font-semibold whitespace-nowrap pr-2">
+                Flowise Chat
+              </span>
+            )}
           </div>
         </button>
-
-        {/* Pulse Animation Ring */}
-        {!isOpen && (
-          <div className="absolute inset-0 rounded-full bg-yellow-400 animate-ping opacity-20" />
-        )}
       </div>
 
       {/* Chat Window */}
@@ -69,7 +59,7 @@ const ChatWidget = () => {
           <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-black p-4 flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/7bea0c57-deef-419a-a5a9-2b3db27ce864.png" 
+                src="/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png" 
                 alt="Studio MR" 
                 className="w-8 h-8 object-contain"
               />
