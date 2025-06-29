@@ -47,11 +47,7 @@ const Gallery = () => {
       alt: 'Unhas decoradas',
       category: 'Nail Art'
     },
-    {
-      src: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80',
-      alt: 'Make artística',
-      category: 'Maquiagem'
-    }
+
   ];
 
   useEffect(() => {
@@ -100,9 +96,8 @@ const Gallery = () => {
           {galleryImages.map((image, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 ${
-                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}
+              className={`group relative overflow-hidden rounded-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                }`}
               style={{ transitionDelay: `${index * 100}ms` }}
               onClick={() => openLightbox(image.src)}
             >
@@ -112,7 +107,7 @@ const Gallery = () => {
                 className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
               />
-              
+
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
@@ -120,7 +115,7 @@ const Gallery = () => {
                   <span className="text-yellow-400 text-sm font-medium">{image.category}</span>
                 </div>
               </div>
-              
+
               {/* Zoom Icon */}
               <div className="absolute top-4 right-4 bg-black/50 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,7 +128,7 @@ const Gallery = () => {
 
         {/* Lightbox Modal */}
         {selectedImage && (
-          <div 
+          <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
             onClick={closeLightbox}
           >
