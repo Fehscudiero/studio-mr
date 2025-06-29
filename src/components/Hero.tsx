@@ -43,6 +43,30 @@ const Hero = () => {
             Sua transformação começa aqui, no <span className="text-yellow-400 font-semibold">Studio MR</span>
           </p>
           
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-center">
+            <div className="flex flex-col items-center space-y-2">
+              <img 
+                src="/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png" 
+                alt="Atendimento Premium" 
+                className="w-12 h-12 object-contain opacity-90"
+              />
+              <span className="text-lg font-semibold text-yellow-300">Atendimento Personalizado 24/7</span>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <svg className="w-12 h-12 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="text-lg font-semibold text-yellow-300">Qualidade Garantida</span>
+            </div>
+            <div className="flex flex-col items-center space-y-2">
+              <svg className="w-12 h-12 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              <span className="text-lg font-semibold text-yellow-300">Resultados Rápidos</span>
+            </div>
+          </div>
+          
           <button 
             onClick={handleScheduleClick}
             className="group bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-black px-8 py-4 rounded-full text-lg font-bold hover:from-yellow-300 hover:to-yellow-500 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-yellow-500/25"
