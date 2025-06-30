@@ -51,9 +51,9 @@ const Contact = () => {
               <div className="bg-gradient-to-r from-yellow-100 to-yellow-50 dark:from-yellow-900/20 dark:to-yellow-800/20 rounded-2xl p-8 mb-8">
                 <div className="flex items-center justify-center mb-6">
                   <img 
-                    src="/lovable-uploads/7bea0c57-deef-419a-a5a9-2b3db27ce864.png" 
+                    src="/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png" 
                     alt="Studio MR" 
-                    className="w-16 h-16 object-contain mr-4"
+                    className="w-28 h-28 object-contain mr-4"
                   />
                   <div className="text-left">
                     <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">

@@ -46,7 +46,7 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-center">
             <div className="flex flex-col items-center space-y-2">
               <img
-                src="/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png"
+                src="/lovable-uploads/logo.png"
                 alt="Atendimento Premium"
                 className="w-12 h-12 object-contain opacity-90"
               />

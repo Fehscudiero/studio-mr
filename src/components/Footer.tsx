@@ -7,9 +7,9 @@ const Footer = () => {
           {/* Logo and Brand */}
           <div className="flex items-center space-x-3 mb-6 md:mb-0">
             <img 
-              src="/lovable-uploads/7bea0c57-deef-419a-a5a9-2b3db27ce864.png" 
+              src="/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png" 
               alt="Studio MR" 
-              className="w-10 h-10 object-contain"
+              className="w-20 h-20 object-contain"
             />
             <span className="text-xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               Studio MR

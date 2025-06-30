@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
@@ -42,11 +41,14 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-4">
             <img 
-              src="/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png" 
+              src="/lovable-uploads/logo.png" 
               alt="Studio MR" 
-              className="w-20 h-20 object-contain"
+              className="w-16 h-16 object-contain"
             />
-            <span className="text-3xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+            <span
+              style={{ fontFamily: "'Great Vibes', cursive" }}
+              className="text-3xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent"
+            >
               Studio MR
             </span>
           </div>

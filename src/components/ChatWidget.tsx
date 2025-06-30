@@ -14,7 +14,8 @@ const ChatWidget = () => {
         theme: {
           button: {
             size: 64,
-            customIconSrc: "/lovable-uploads/fe23e7bd-ba10-4cce-beb5-c10789635890.png",
+            customIconSrc: "/lovable-uploads/logo.png",
+            size: 80,
             iconColor: "white",
             backgroundColor: "#000"
           },
